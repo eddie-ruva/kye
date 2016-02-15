@@ -1,0 +1,17 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Edilberto Ruvalcaba Galindo 
+    Twitter: @eddie_ruvalcaba
+
+# THANKS
+
+    The team behind html5 boilerplate
+    https://github.com/h5bp/html5-boilerplate/graphs/contributors
+
+# TECHNOLOGY COLOPHON
+
+    CSS3, HTML5
+    Normalize.css
