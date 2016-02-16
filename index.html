@@ -9,123 +9,107 @@
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
 
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="favicon.ico">
     <!-- Place favicon.ico in the root directory -->
 
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700|Josefin+Sans' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/base.css">
+    <link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,700|Open+Sans:400,700,600' rel='stylesheet' type='text/css'>
   </head>
   <body>
     <!--[if lt IE 8]>
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-    <main class="site-content">
+    <main class="site-content container">
       <header class="site-header">
-        <nav>
-          <ul>
-            <li>Inicio</li>
-            <li>Boda</li>
-            <li class="kye-logo">K&E</li>
-            <li>Viaje</li>
-            <li>Fotos</li>
-          </ul>
+        <nav id="navbar" class="navbar">
+            <ul>
+              <li><a href="/">Inicio</a></li>
+              <li><a href="#agenda">Boda</a></li>
+              <li class="kye-logo">K&E</li>
+              <li><a href="#hotels">Viaje</a></li>
+              <li><a href="#photos">Fotos</a></li>
+            </ul>
           <div class="nav-line"></div>
         </nav>
       </header>
-
-      <section class="showcase-mod">
-        <img class="one" src="img/image3.jpg" alt="">
-        <img class="two" src="img/image4.jpg" alt="">
-        <img class="three" src="img/image1.jpg" alt="">
-        <img class="four" src="img/image2.jpg" alt="">
+      <section class="mod showcase-mod" id="showcase">
+        <img class="one" src="img/showcase/image3.jpg" alt="Karol y Eddie - Santiago, Nuevo León, México">
+        <img class="two" src="img/showcase/image4.jpg" alt="Karol y Eddie - Parque Fundidora">
+        <img class="three" src="img/showcase/image1.jpg" alt="Karol y Eddie - SF">
+        <img class="four" src="img/showcase/image2.jpg" alt="Karol y Eddie - Lombard Street">
       </section>
-      <section class="welcome-mod mod">
+      <section class="mod welcome-mod">
         <header>
           <h1 class="welcome-mod-our-names">
             <span>Karol Acosta</span><br/>
-            <span>y</span><br/>
+            <span class="and">&</span><br/>
             <span>Edilberto Ruvalcaba</span>
           </h1>
         </header>
-        <h3>20 de agosto del 2016</h3>
+        <h5 class="welcome-mod-date">20 de agosto del 2016</h5>
         <p>
-          Bacon ipsum dolor amet brisket pork belly tri-tip filet mignon cupim pork beef salami,
-          pork loin pancetta. Biltong strip steak meatloaf capicola ham tenderloin swine drumstick
-          sausage brisket kevin beef ribs ribeye. Biltong strip steak brisket cow, ball tip doner
-          jerky rump meatloaf filet mignon fatback spare ribs. Shank sausage alcatra jowl, cupim
-          swine turkey doner bresaola. Bacon tongue bresaola spare ribs jowl, doner pork loin flank
-          pancetta swine ground round pork chop. Bresaola alcatra brisket, kevin beef ribeye sausage
-          ham flank tongue shoulder prosciutto sirloin.
+          Con mucha emoción y alegría queremos extenderles la invitación para que nos puedan acompañar a Edilberto y a mi en el día que marcará el inicio de nuestra vida como familia. Después de algunos años, una primera cita en un puesto de hot dogs, varios viajes para que la distancia no nos separara y muchas llamadas con diferencia de horas hemos decidido comenzar una vida juntos. Esperamos que en la compañía de las personas que más queremos podamos celebrar la realización de este evento y podamos compartir con todos ustedes un día que sin duda marcará de felicidad para siempre nuestra vida.
         </p>
       </section>
-      <section class="event-mod mod">
-        <ul class="clearfix info-columns">
-          <li>
-            <h2>Callejoneada</h2>
-            <h4>Centro de la ciudad de Zacatecas</h4>
+      <section class="mod event-mod" id="agenda">
+        <h2 class="mod-title">Agenda</h2>
+        <ul class="row info-row">
+          <li class="four columns info-column">
+            <h2 class="info-column-title">Callejoneada</h2>
+            <h4 class="info-column-subtitle">Centro de la ciudad de Zacatecas</h4>
             <p>2:30 p.m. - 3:30 p.m.</p>
             <p>Calle Hidalgo #4233, Centro, 98000 Zacatecas, Zac., México</p>
+            <a href="https://goo.gl/maps/NH8Rhk9aGfN2">Ver Mapa</a>
           </li>
-          <li>
-            <h2>Ceremonia religiosa</h3>
-            <h4>Capilla Nápoles</h4>
+          <li class="four columns info-column">
+            <h2 class="info-column-title">Ceremonia religiosa</h3>
+            <h4 class="info-column-subtitle">Capilla Nápoles</h4>
             <p>2:00 p.m. - 3:00 p.m.</p>
             <p>s/n, Jardín Juárez, Centro, Guadalupe, Zac., México</p>
+            <a href="https://goo.gl/maps/JMkbQp22awp">Ver Mapa</a>
           </li>
-          <li>
-            <h2>Recepción</h2>
-            <h4>Finca Santa</h4>
-            <p>3:00 p.m. - X:XX p.m.</p>
+          <li class="four columns info-column">
+            <h2 class="info-column-title">Recepción</h2>
+            <h4 class="info-column-subtitle">Finca Santa</h4>
+            <p>3:00 p.m.</p>
             <p>Calle Independencia 4, Centro, 98600 Guadalupe, Zac., México</p>
+            <a href="https://goo.gl/maps/PTwzabQX2hy">Ver Mapa</a>
           </li>
         </ul>
       </section>
-      <section class="mod">
+      <section class="mod" id="hotels">
         <h2 class="mod-title">¿Dónde quedarse?</h2>
-        <ul class="clearfix info-columns info-columns-two">
-          <li>
-            <h2><a href="http://www.mesondejobito.com.mx/" target="_blank" rel="nofollow">Hotel Mesón de Jobito</a></h2>
-            <img class="event-gallery-mod-img-1" src="http://placehold.it/350x150" alt="">
+        <ul class="row info-row">
+          <li class="six columns info-column">
+            <h2 class="info-column-title"><a href="http://www.mesondejobito.com.mx/" target="_blank" rel="nofollow">Hotel Mesón de Jobito</a></h2>
+            <img class="info-column-img" src="img/hoteles/jobito.jpeg" alt="Vista de Mesón de Jobito" width="350">
             <p>Tel: 01 (492) 924 1722</p>
             <p><a href="mailto:reservaciones@mesondejobito.com">reservaciones@mesondejobito.com</a></p>
             <p>Jardín Juárez 143 Colonia Centro Zacatecas, C.P. 98000, Zacatecas, Zac.</p>
             <p>A 21 minutos del Aeropuerto Internacional y 16 minutos de la ceremonia religiosa.</p>
+            <a href="https://goo.gl/maps/dWwuXPWVGyQ2">Ver Mapa</a>
           </li>
-          <li>
-            <h2><a href="http://www.hotelesemporio.com/zacatecas" target="_blank" rel="nofollow">Hotel Emporio Zacatecas</a></h2>
-            <img class="event-gallery-mod-img-1" src="http://placehold.it/350x150" alt="">
+          <li class="six columns info-column">
+            <h2 class="info-column-title"><a href="http://www.hotelesemporio.com/zacatecas" target="_blank" rel="nofollow">Hotel Emporio Zacatecas</a></h2>
+            <img class="info-column-img" src="img/hoteles/emporio.jpeg" alt="Vista de Hotel Emporio" width="350">
             <p>Tel: 01 (492) 925 6500, 01 800 227 22 72, 01 800 800 61 61 y 01 55 50 62 61 61</p>
             <p><a href="mailto:reservaciones@hotelesemporio.com">reservaciones@hotelesemporio.com</a></p>
             <p>Av. Hidalgo 703 Centro Histórico, C.P. 98000, Zacatecas, Zac.</p>
             <p>A 20 minutos del Aeropuerto Internacional y 15 minutos de la ceremonia religiosa.</p>
+            <a href="https://goo.gl/maps/QzQAAfjsmJn">Ver Mapa</a>
           </li>
         </ul>
       </section>
-      <section class="event-gallery-mod mod">
-        <h2 class="mod-title with-subtitle">#K+E2016</h2>
-        <h3 class="mod-subtitle">Ayúdanos a compartir fotos del evento en FB, Twitter ó Instagram</h3>
-        <div class="event-gallery-mod-wrapper">
-          <img class="event-gallery-mod-img-1" src="http://placehold.it/350x150" alt="">
-          <img class="event-gallery-mod-img-2" src="http://placehold.it/350x150" alt="">
-          <img class="event-gallery-mod-img-3" src="http://placehold.it/350x150" alt="">
-          <img class="event-gallery-mod-img-4" src="http://placehold.it/350x150" alt="">
-          <img class="event-gallery-mod-img-5" src="http://placehold.it/350x150" alt="">
-          <img class="event-gallery-mod-img-6" src="http://placehold.it/350x150" alt="">
-          <img class="event-gallery-mod-img-7" src="http://placehold.it/350x150" alt="">
-          <img class="event-gallery-mod-img-8" src="http://placehold.it/350x150" alt="">
+      <section class="mod event-gallery-mod" id="photos">
+        <h2 class="mod-title with-subtitle">Compártenos tus fotos</h2>
+        <p class="mod-subtitle">Ayúdanos a compartir fotos del evento en FB, Twitter ó Instagram</p>
+        <div class="event-gallery-wrapper">
+          <img class="" src="img/collage.jpg" alt="Comparte tus fotos del evento en FB, Twitter ó Instagram">
+          <h3 class="event-gallery-hashtag">#K+E2016</h3>
         </div>
       </section>
     </main>
-
-    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-    <script>
-      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-                                                              function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-                                                              e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-                                                              e.src='https://www.google-analytics.com/analytics.js';
-                                                              r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-                                                              ga('create','UA-XXXXX-X','auto');ga('send','pageview');
-    </script>
+    <script src="js/main.js"></script>
   </body>
 </html>
