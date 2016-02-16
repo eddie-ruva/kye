@@ -50,6 +50,7 @@
 
   onDocumentReady(function() {
     var ticking = false;
+
     navigationOffsetTop = doc.getElementById('navbar').getBoundingClientRect().top +
       doc.body.scrollTop;
 

@@ -1,26 +1,14 @@
-@import "../css/vendor/normalize";
-@import "../css/vendor/skeleton";
+@import "../vendor/css/normalize";
+@import "../vendor/css/skeleton";
 
-/* Larger than mobile */
-$br1: 400px;
-$br2: 550px;
-$br3: 7500px;
-$br4: 1000px;
-$br5: 1200px;
+$kye-red: #F24257;
 
-/*! HTML5 Boilerplate v5.3.0 | MIT License | https://html5boilerplate.com/ */
-
-/*
- * What follows is the result of much research on cross-browser styling.
- * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
- * Kroc Camen, and the H5BP dev community and team.
- */
-
-/* ==========================================================================
-Base styles: opinionated defaults
-========================================================================== */
 body {
   font-family: 'Open Sans', sans-serif;
+}
+
+textarea {
+  resize: none;
 }
 
 /*
@@ -28,7 +16,6 @@ body {
  * images, videos and the bottom of their containers:
  * https://github.com/h5bp/html5-boilerplate/issues/440
  */
-
 audio,
 canvas,
 iframe,
@@ -38,11 +25,6 @@ video {
   vertical-align: middle;
 }
 
-
-/* ==========================================================================
-Browser Upgrade Prompt
-========================================================================== */
-
 .browserupgrade {
   margin: 0.2em 0;
   background: #ccc;
@@ -50,7 +32,9 @@ Browser Upgrade Prompt
   padding: 0.2em 0;
 }
 
-$kye-red: #F24257;
+.site-content {
+  text-align: center;
+}
 
 .site-header {
   margin-bottom: 30px;
@@ -71,14 +55,12 @@ $kye-red: #F24257;
 }
 
 .navbar {
-  text-align: center;
   position: relative;
   margin-top: 2rem;
   background: rgb(255, 255, 255);
 
   ul {
     list-style: none;
-    text-align: center;
     display: inline-block;
     position: relative;
     background: rgb(255, 255, 255);
@@ -103,7 +85,6 @@ $kye-red: #F24257;
     padding: 0;
     background-color: $kye-red;
     border-radius: 50%;
-    text-align: center;
     line-height: 80px;
     color: rgb(255, 255, 255);
     text-shadow: 0px 1px 1px rgb(85, 85, 85);
@@ -148,10 +129,12 @@ $kye-red: #F24257;
 
 .mod {
   padding: 4rem 0;
+  @media (min-width: 550px) {
+    padding: 6rem 0;
+  }
 }
 
 .showcase-mod {
-  text-align: center;
 
   img {
     $image-rotation: 10deg;
@@ -209,7 +192,6 @@ $kye-red: #F24257;
 
 
 .welcome-mod {
-  text-align: center;
 
   .welcome-mod-our-names {
     font-family: 'Playfair Display', serif;
@@ -232,10 +214,18 @@ $kye-red: #F24257;
 
 .info-row {
   list-style: none;
-  text-align: center;
+  margin-bottom: 0;
 
   .info-column {
     margin-bottom: 3rem;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    @media (min-width: 550px) {
+      margin-bottom: 0;
+    }
   }
 
   .info-column-title {
@@ -272,16 +262,11 @@ $kye-red: #F24257;
 
 .mod-title {
   font-family: 'Playfair Display', serif;
-  text-align: center;
-}
-
-.mod-title.with-subtitle {
-  margin-bottom: 0px;
 }
 
 .mod-subtitle {
   margin-top: 0px;
-  text-align: center;
+  font-style: italic;
 }
 
 .event-gallery-mod {
@@ -306,76 +291,16 @@ $kye-red: #F24257;
   }
 }
 
-/* ==========================================================================
-Helper classes
-========================================================================== */
-
-/*
- * Hide visually and from screen readers
- */
-
-.hidden {
-  display: none !important;
+.thankyou-mod {
+  margin-top: 9rem;
+  border-top: 1px solid #D1D1D1;
+  font-family: 'Playfair Display', serif;
 }
 
-/*
- * Hide only visually, but have it available for screen readers:
- * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
- */
+.rsvp-thanks {
+  margin-top: 10rem;
 
-.visuallyhidden {
-  border: 0;
-  clip: rect(0 0 0 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: 1px;
-}
-
-/*
- * Extends the .visuallyhidden class to allow the element
- * to be focusable when navigated to via the keyboard:
- * https://www.drupal.org/node/897638
- */
-
-.visuallyhidden.focusable:active,
-.visuallyhidden.focusable:focus {
-  clip: auto;
-  height: auto;
-  margin: 0;
-  overflow: visible;
-  position: static;
-  width: auto;
-}
-
-/*
- * Hide visually and from screen readers, but maintain layout
- */
-
-.invisible {
-  visibility: hidden;
-}
-
-/*
- * Clearfix: contain floats
- *
- * For modern browsers
- * 1. The space content is one way to avoid an Opera bug when the
- *    `contenteditable` attribute is included anywhere else in the document.
- *    Otherwise it causes space to appear at the top and bottom of elements
- *    that receive the `clearfix` class.
- * 2. The use of `table` rather than `block` is only necessary if using
- *    `:before` to contain the top-margins of child elements.
- */
-
-.clearfix:before,
-.clearfix:after {
-  content: " "; /* 1 */
-  display: table; /* 2 */
-}
-
-.clearfix:after {
-  clear: both;
+  h1 {
+    font-family: 'Playfair Display', serif;
+  }
 }
