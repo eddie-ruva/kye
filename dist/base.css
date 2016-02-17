@@ -1032,3 +1032,6 @@ video {
   margin-top: 10rem; }
   .rsvp-thanks h1 {
     font-family: 'Playfair Display', serif; }
+
+.rsvp-form label {
+  text-align: left; }
