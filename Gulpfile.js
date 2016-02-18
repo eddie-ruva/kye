@@ -4,6 +4,8 @@ var gulp = require('gulp');
 var sass = require('gulp-sass');
 var autoprefixer = require('gulp-autoprefixer');
 var uglify = require('gulp-uglify');
+var connect = require('gulp-connect');
+var watch = require('gulp-watch');
 
 gulp.task('autoprefixer', function () {
   return gulp.src('css/base.css')
@@ -22,7 +24,7 @@ gulp.task('sass', function () {
 
 gulp.task('sass:prod', function () {
   return gulp.src('./sass/**/*.scss')
-    .pipe(sass().on('error', sass.logError))
+    .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
     .pipe(gulp.dest('./dist'));
 });
 
@@ -32,9 +34,22 @@ gulp.task('compress', function() {
     .pipe(gulp.dest('dist'));
 });
 
-gulp.task('sass:watch', function () {
-  gulp.watch('./sass/**/*.scss', ['default']);
+gulp.task('watch', function () {
+  gulp.watch('./sass/**/*.scss', ['sass', 'autoprefixer']);
+  gulp.watch('./js/**/*.js', ['compress']);
+});
+
+gulp.task('livereload', function() {
+  gulp.src(['dist/*.css', 'dist/*.js'])
+    .pipe(watch(['dist/*.css', 'dist/*.js']))
+    .pipe(connect.reload());
+});
+
+gulp.task('webserver', function() {
+  connect.server({
+    livereload: true
+  });
 });
 
 gulp.task('release', ['sass:prod', 'autoprefixer', 'compress']);
-gulp.task('default', ['sass', 'autoprefixer']);
+gulp.task('default', ['sass', 'autoprefixer', 'compress', 'webserver', 'livereload', 'watch']);
