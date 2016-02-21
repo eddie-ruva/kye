@@ -13,7 +13,7 @@
     <!-- Place favicon.ico in the root directory -->
 
     <link rel="stylesheet" href="dist/base.css">
-    <link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,700|Open+Sans:400,700,600' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Playfair+Display:400|Open+Sans:400,700' rel='stylesheet' type='text/css'>
   </head>
   <body>
     <!--[if lt IE 8]>
@@ -21,18 +21,17 @@
     <![endif]-->
 
     <main class="site-content container">
-      <header class="site-header">
-        <nav id="navbar" class="navbar">
-            <ul>
-              <li><a href="#">Inicio</a></li>
-              <li><a href="#agenda">Boda</a></li>
-              <li class="kye-logo">K&E</li>
-              <li><a href="#hotels">Viaje</a></li>
-              <li><a href="#photos">Fotos</a></li>
-            </ul>
-          <div class="nav-line"></div>
-        </nav>
-      </header>
+      <nav id="navbar" class="navbar">
+        <div class="navbar-wrapper">
+          <span class="kye-logo">K&E</span>
+          <ul>
+            <li><a class="nav-link" href="#">Inicio</a></li>
+            <li><a class="nav-link" href="#agenda">Boda</a></li>
+            <li><a class="nav-link" href="#hotels">Viaje</a></li>
+            <li><a class="nav-link" href="#photos">Fotos</a></li>
+          </ul>
+        </div>
+      </nav>
       <section class="mod showcase-mod" id="showcase">
         <img class="one" src="img/showcase/image1.jpg" alt="Karol y Eddie - Santiago, Nuevo León, México">
         <img class="two" src="img/showcase/image2.jpg" alt="Karol y Eddie - Alcatraz">
@@ -49,11 +48,11 @@
         </header>
         <h5 class="welcome-mod-date">20 de agosto del 2016</h5>
         <p>
-          Con mucha emoción y alegría queremos extenderles la invitación para que nos puedan en el día que marcará el inicio de nuestra vida como familia. Después de algunos años, una primera cita en un puesto de hot dogs, varios viajes para que la distancia no nos separara y muchas llamadas con diferencia de horas hemos decidido comenzar una vida juntos. Esperamos que en la compañía de las personas que más queremos, podamos celebrar la realización de este evento y compartir con ustedes un día que sin duda marcará de felicidad para siempre nuestras vidas.
+          Con mucha emoción y alegría queremos extenderles la invitación para que nos puedan acompañar en el día que marcará el inicio de nuestra vida como familia. Después de algunos años, una primera cita en un puesto de hot dogs, varios viajes para que la distancia no nos separara y muchas llamadas con diferencia de horas hemos decidido comenzar una vida juntos. Esperamos que en la compañía de las personas que más queremos, podamos celebrar la realización de este evento y compartir con ustedes un día que sin duda marcará de felicidad para siempre nuestras vidas.
         </p>
       </section>
       <section class="mod event-mod" id="agenda">
-        <h2 class="mod-title">Agenda</h2>
+        <h2 class="mod-title" id="agenda-title">Agenda</h2>
         <ul class="row info-row">
           <li class="four columns info-column">
             <h2 class="info-column-title">Callejoneada</h2>
@@ -82,7 +81,7 @@
         </ul>
       </section>
       <section class="mod" id="hotels">
-        <h2 class="mod-title">¿Dónde quedarse?</h2>
+        <h2 class="mod-title" id="hotels-title">¿Dónde quedarse?</h2>
         <p class="mod-subtitle">
           Favor de realizar la reservación por teléfono y mencionar que desean la tarifa
           para la boda de Karol y Edilberto.
@@ -106,7 +105,7 @@
           </li>
         </ul>
       </section>
-      <section class="mod">
+      <section class="mod" id="rsvp">
         <h2 class="mod-title">Confirma tu asistencia</h2>
         <p class="mod-subtitle">Favor de confirma tu asistencia llenando la siguiente forma o enviando un correo a <a href="mailto:karolacosta.padilla@gmail.com">karolacosta.padilla@gmail.com</a></p>
         <form id="rsvp-form" class="rsvp-form" method="POST" action="http://formspree.io/karolacosta.padilla@gmail.com">
@@ -129,17 +128,32 @@
         </form>
       </section>
       <section class="mod event-gallery-mod" id="photos">
-        <h2 class="mod-title">Compártenos tus fotos</h2>
+        <h2 class="mod-title" id="photos-title">Compártenos tus fotos</h2>
         <p class="mod-subtitle">Ayúdanos a compartir fotos del evento en FB, Twitter ó Instagram</p>
         <div class="event-gallery-wrapper">
           <img class="" src="img/collage.jpg" alt="Comparte tus fotos del evento en FB, Twitter ó Instagram">
           <h3 class="event-gallery-hashtag">#K+E2016</h3>
         </div>
       </section>
+      <section class="mod faq-mod" id="faq">
+        <h2 class="mod-title">Preguntas Frecuentes</h2>
+        <p class="mod-subtitle">Si tienes alguna duda la puedes hacer llegar mandando un correo a <a href="mailto:karolacosta.padilla@gmail.com">karolacosta.padilla@gmail.com</a></p>
+        <dl class="faq-list">
+          <dt>¿Cuál es la recomendación para la vestimenta?</dt>
+          <dd>La recomendación para la vestimenta es ir de largo.</dd>
+          <dt>¿Cuál es la recomendación para la vestimenta?</dt>
+          <dd>La recomendación para la vestimenta es ir de largo.</dd>
+          <dt>¿Cuál es la recomendación para la vestimenta?</dt>
+          <dd>La recomendación para la vestimenta es ir de largo.</dd>
+          <dt>¿Cuál es la recomendación para la vestimenta?</dt>
+          <dd>La recomendación para la vestimenta es ir de largo.</dd>
+        </dl>
+      </section>
       <section class="mod thankyou-mod">
         <h5 class="thankyou-mod-message">¡Gracias!<br/>Karol & Edilberto</h5>
       </section>
     </main>
-    <script src="dist/main.js"></script>
+    <script src="dist/smooth-scroll.min.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
