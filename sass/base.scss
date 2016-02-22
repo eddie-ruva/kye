@@ -203,6 +203,32 @@ video {
     margin-top: 10rem;
   }
 
+  .welcome-message {
+    margin: 5rem 0;
+
+    @media (min-width: 550px) {
+      margin: 5rem 0 9rem;
+    }
+  }
+
+  .welcome-mod-our-names {
+    font-family: 'Playfair Display', serif;
+    border: 1px solid rgb(210, 210, 210);
+    border-left: 0;
+    border-right: 0;
+    display: inline-block;
+    padding: 20px 60px;
+    margin-bottom: 1rem;
+
+    .and {
+      color: $kye-red;
+    }
+  }
+
+  .welcome-mod-date {
+    margin-bottom: 4rem;
+  }
+
   img {
     $image-rotation: 5deg;
     width: 100%;
@@ -255,28 +281,6 @@ video {
     }
   }
 
-}
-
-
-.welcome-mod {
-
-  .welcome-mod-our-names {
-    font-family: 'Playfair Display', serif;
-    border: 1px solid rgb(210, 210, 210);
-    border-left: 0;
-    border-right: 0;
-    display: inline-block;
-    padding: 20px 60px;
-    margin-bottom: 1rem;
-
-    .and {
-      color: $kye-red;
-    }
-  }
-
-  .welcome-mod-date {
-    margin-bottom: 4rem;
-  }
 }
 
 .info-row {

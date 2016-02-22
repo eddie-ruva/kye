@@ -968,6 +968,23 @@ video {
   @media (min-width: 550px) {
     .showcase-mod {
       margin-top: 10rem; } }
+  .showcase-mod .welcome-message {
+    margin: 5rem 0; }
+    @media (min-width: 550px) {
+      .showcase-mod .welcome-message {
+        margin: 5rem 0 9rem; } }
+  .showcase-mod .welcome-mod-our-names {
+    font-family: 'Playfair Display', serif;
+    border: 1px solid #d2d2d2;
+    border-left: 0;
+    border-right: 0;
+    display: inline-block;
+    padding: 20px 60px;
+    margin-bottom: 1rem; }
+    .showcase-mod .welcome-mod-our-names .and {
+      color: #F24257; }
+  .showcase-mod .welcome-mod-date {
+    margin-bottom: 4rem; }
   .showcase-mod img {
     width: 100%;
     position: relative;
@@ -999,20 +1016,6 @@ video {
           transform: rotate(5deg);
           top: -30px;
           z-index: 4; } }
-
-.welcome-mod .welcome-mod-our-names {
-  font-family: 'Playfair Display', serif;
-  border: 1px solid #d2d2d2;
-  border-left: 0;
-  border-right: 0;
-  display: inline-block;
-  padding: 20px 60px;
-  margin-bottom: 1rem; }
-  .welcome-mod .welcome-mod-our-names .and {
-    color: #F24257; }
-
-.welcome-mod .welcome-mod-date {
-  margin-bottom: 4rem; }
 
 .info-row {
   list-style: none;
