@@ -50,6 +50,8 @@
 
   onDocumentReady(function() {
     var ticking = false;
+    var menuButton = doc.getElementById('navbar-trigger');
+    var navbarMenu = doc.getElementById('navbar-menu');
 
     navigationOffsetTop = doc.getElementById('navbar').getBoundingClientRect().top +
       doc.body.scrollTop;
@@ -62,6 +64,10 @@
         });
       }
       ticking = true;
+    });
+
+    menuButton.addEventListener('click', function() {
+      navbarMenu.classList.toggle('is-open');
     });
   });
 

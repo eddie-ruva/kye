@@ -32,70 +32,130 @@ video {
   padding: 0.2em 0;
 }
 
+  @media (min-width: 550px) {
+  }
+
 .site-content {
   text-align: center;
+  @media (min-width: 550px) {
+    // When we have sticky nav
+  }
 }
 
-.site-header {
-  margin-bottom: 30px;
-}
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translate3d(-100%, 0, 0);
+  }
 
-@media (min-width: 550px) {
-  .has-docked-nav .navbar {
-    z-index: 99; // Make sure this is on top of everything
-    position: fixed;
-    top: 0;
-    left: 50%;
-    display: block;
-    width: 80%;
-    border-top: 1px solid rgb(238, 238, 238);
-    margin-top: 0;
-    margin-left: -40%;
-    padding: 1rem 0;
+  to {
+    opacity: 1;
+    transform: none;
   }
 }
 
 .navbar {
-  position: relative;
-  margin-top: 2rem;
-  background: rgb(255, 255, 255);
+  $kye-logo-size: 60px;
+
+  margin-bottom: 3rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  text-align: center;
+  width: 100%;
+  z-index: 5;
+  background: white;
+  box-shadow: 1px 1px 1px 1px #F0F0F0;
+  box-sizing: border-box;
+  padding: 0px 20px;
+  min-height: $kye-logo-size;
+
+  @media (min-width: 550px) {
+    width: 80%; // Match .container width
+    padding: 3.5rem 0;
+    box-shadow: none;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .navbar-wrapper {
+    margin: 1.5rem 0;
+    text-align: left;
+    position: relative;
+
+    @media (min-width: 550px) {
+      display: inline-block;
+      margin: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 3;
+    }
+  }
+
+  .navbar-menu-trigger {
+    border: 0;
+    padding: 0;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+
+    @media (min-width: 550px) {
+      display: none;
+    }
+  }
 
   ul {
     list-style: none;
-    display: inline-block;
     position: relative;
-    background: rgb(255, 255, 255);
-    margin-bottom: 0;
-    z-index: 3; // Shown above the navline
+    background: white;
+    margin: 1rem 0 0;
+    display: none;
+
+    &.is-open {
+      animation: fadeInDown .5s;
+      display: block;
+    }
+
+    @media (min-width: 550px) {
+      display: inline-block;
+      margin: 0;
+      z-index: 2;
+    }
   }
+
 
   li {
     display: inline-block;
     text-transform: uppercase;
     padding: 0 1rem;
-    margin-top: 10rem;
     font-size: 1.3rem;
     color: rgb(34, 34, 34);
+
+    @media (min-width: 550px) {
+      margin-bottom: 0;
+
+      &.middle {
+        margin-left: $kye-logo-size;
+      }
+    }
   }
 
   .kye-logo {
-    $kye-logo-size: 80px;
-
     width: $kye-logo-size;
     height: $kye-logo-size;
     padding: 0;
     background-color: $kye-red;
     border-radius: 50%;
-    line-height: 80px;
+    line-height: $kye-logo-size;
     color: rgb(255, 255, 255);
     text-shadow: 0px 1px 1px rgb(85, 85, 85);
     font-size: 1.1em;
     letter-spacing: .15em;
-    position: absolute;
-    left: 50%;
-    margin-left: ($kye-logo-size / 2) * -1;
-    margin-top: 0;
-    margin-bottom: 0;
+    display: inline-block;
+    text-align: center;
   }
 
   a {
@@ -104,11 +164,7 @@ video {
   }
 
   .nav-line {
-    border-bottom: 1px solid #D1D1D1;
-    position: absolute;
-    font-size: 12px;
-    bottom: 1.8rem;
-    width: 100%;
+    display: none;
   }
 
   @media (min-width: 550px) {
@@ -122,20 +178,30 @@ video {
     }
 
     .nav-line {
+      display: block;
+      position: absolute;
       top: 50%;
+      left: 0;
       bottom: initial;
+      width: 100%;
+      margin: 0;
     }
   }
 }
 
 .mod {
-  padding: 4rem 0;
+  margin: 0 0 8rem;
   @media (min-width: 550px) {
-    padding: 6rem 0;
+    margin: 12rem 0;
   }
 }
 
 .showcase-mod {
+  margin-top: 15rem;
+
+  @media (min-width: 550px) {
+    margin-top: 10rem;
+  }
 
   img {
     $image-rotation: 5deg;
@@ -293,7 +359,7 @@ video {
 }
 
 .thankyou-mod {
-  margin-top: 9rem;
+  padding-top: 3rem;
   border-top: 1px solid #D1D1D1;
   font-family: 'Playfair Display', serif;
 }

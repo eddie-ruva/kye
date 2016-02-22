@@ -13,7 +13,7 @@
     <!-- Place favicon.ico in the root directory -->
 
     <link rel="stylesheet" href="dist/base.css">
-    <link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,700|Open+Sans:400,700,600' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Playfair+Display:400|Open+Sans:400,700' rel='stylesheet' type='text/css'>
   </head>
   <body>
     <!--[if lt IE 8]>
@@ -21,18 +21,19 @@
     <![endif]-->
 
     <main class="site-content container">
-      <header class="site-header">
-        <nav id="navbar" class="navbar">
-            <ul>
-              <li><a href="#">Inicio</a></li>
-              <li><a href="#agenda">Boda</a></li>
-              <li class="kye-logo">K&E</li>
-              <li><a href="#hotels">Viaje</a></li>
-              <li><a href="#photos">Fotos</a></li>
-            </ul>
-          <div class="nav-line"></div>
-        </nav>
-      </header>
+      <nav id="navbar" class="navbar">
+        <div class="navbar-wrapper">
+          <span class="kye-logo">K&E</span>
+          <button id="navbar-trigger" class="navbar-menu-trigger">Menú</button>
+        </div>
+        <ul id="navbar-menu">
+          <li><a class="nav-link" href="#">Inicio</a></li>
+          <li><a class="nav-link" href="#agenda">Boda</a></li>
+          <li class="middle"><a class="nav-link" href="#hotels">Viaje</a></li>
+          <li><a class="nav-link" href="#photos">Fotos</a></li>
+        </ul>
+        <hr class="nav-line"/>
+      </nav>
       <section class="mod showcase-mod" id="showcase">
         <img class="one" src="img/showcase/image1.jpg" alt="Karol y Eddie - Santiago, Nuevo León, México">
         <img class="two" src="img/showcase/image2.jpg" alt="Karol y Eddie - Alcatraz">
@@ -49,7 +50,7 @@
         </header>
         <h5 class="welcome-mod-date">20 de agosto del 2016</h5>
         <p>
-          Con mucha emoción y alegría queremos extenderles la invitación para que nos puedan en el día que marcará el inicio de nuestra vida como familia. Después de algunos años, una primera cita en un puesto de hot dogs, varios viajes para que la distancia no nos separara y muchas llamadas con diferencia de horas hemos decidido comenzar una vida juntos. Esperamos que en la compañía de las personas que más queremos, podamos celebrar la realización de este evento y compartir con ustedes un día que sin duda marcará de felicidad para siempre nuestras vidas.
+          Con mucha emoción y alegría queremos extenderles la invitación para que nos puedan acompañar en el día que marcará el inicio de nuestra vida como familia. Después de algunos años, una primera cita en un puesto de hot dogs, varios viajes para que la distancia no nos separara y muchas llamadas con diferencia de horas hemos decidido comenzar una vida juntos. Esperamos que en la compañía de las personas que más queremos, podamos celebrar la realización de este evento y compartir con ustedes un día que sin duda marcará de felicidad para siempre nuestras vidas.
         </p>
       </section>
       <section class="mod event-mod" id="agenda">
