@@ -1069,6 +1069,7 @@ video {
   width: 100%; }
 
 .thankyou-mod {
+  margin-bottom: 1rem;
   padding-top: 3rem;
   border-top: 1px solid #D1D1D1;
   font-family: 'Playfair Display', serif; }
