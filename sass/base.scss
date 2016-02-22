@@ -55,6 +55,7 @@ video {
 }
 
 .navbar {
+  $kye-logo-size-big: 75px;
   $kye-logo-size: 60px;
 
   margin-bottom: 3rem;
@@ -71,6 +72,7 @@ video {
   min-height: $kye-logo-size;
 
   @media (min-width: 550px) {
+    min-height: $kye-logo-size-big;
     width: 80%; // Match .container width
     padding: 3.5rem 0;
     box-shadow: none;
@@ -138,7 +140,7 @@ video {
       margin-bottom: 0;
 
       &.middle {
-        margin-left: $kye-logo-size;
+        margin-left: $kye-logo-size-big;
       }
     }
   }
@@ -156,6 +158,12 @@ video {
     letter-spacing: .15em;
     display: inline-block;
     text-align: center;
+
+    @media (min-width: 550px) {
+      width: $kye-logo-size-big;
+      height: $kye-logo-size-big;
+      line-height: $kye-logo-size-big;
+    }
   }
 
   a {
