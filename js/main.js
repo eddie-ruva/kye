@@ -69,6 +69,15 @@
     menuButton.addEventListener('click', function() {
       navbarMenu.classList.toggle('is-open');
     });
+
+    smoothScroll.init({
+      selector: '.nav-link',
+      selectorHeader: '#navbar',
+      speed: 500,
+      easing: 'easeInOutCubic',
+      offset: 40
+    });
+
   });
 
 })(window, document);
