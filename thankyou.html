@@ -12,8 +12,8 @@
     <link rel="icon" type="image/png" href="favicon.ico">
     <!-- Place favicon.ico in the root directory -->
 
-    <link rel="stylesheet" href="css/base.css">
-    <link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,700|Open+Sans:400,700,600' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="dist/base.css">
+    <link href='https://fonts.googleapis.com/css?family=Playfair+Display:400|Open+Sans:400,700' rel='stylesheet' type='text/css'>
   </head>
   <body>
     <!--[if lt IE 8]>
@@ -23,20 +23,24 @@
     <main class="site-content container">
       <header class="site-header">
         <nav id="navbar" class="navbar">
-            <ul>
-              <li><a href="/">Inicio</a></li>
-              <li><a href="#agenda">Boda</a></li>
-              <li class="kye-logo">K&E</li>
-              <li><a href="#hotels">Viaje</a></li>
-              <li><a href="#photos">Fotos</a></li>
-            </ul>
-          <div class="nav-line"></div>
+          <div class="navbar-wrapper">
+            <span class="kye-logo">K&E</span>
+            <button id="navbar-trigger" class="navbar-menu-trigger">Menú</button>
+          </div>
+          <ul id="navbar-menu">
+            <li><a href="/">Inicio</a></li>
+            <li><a href="/#agenda">Boda</a></li>
+            <li class="middle"><a class="nav-link" href="/#hotels">Viaje</a></li>
+            <li><a class="nav-link" href="/#photos">Fotos</a></li>
+          </ul>
+          <hr class="nav-line"/>
         </nav>
       </header>
       <section class="rsvp-thanks">
         <h1>¡Gracias por confirmar tu asistencia!</h1>
         <h2><a href="/">Volver al sitio</a></h2>
       </section>
+      <script src="dist/main.js"></script>
     </main>
   </body>
 </html>

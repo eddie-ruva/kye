@@ -86,13 +86,15 @@
       toggleClass(navbarMenu, 'is-open');
     });
 
-    smoothScroll.init({
-      selector: '.nav-link',
-      selectorHeader: '#navbar',
-      speed: 500,
-      easing: 'easeInOutCubic',
-      offset: 40
-    });
+    if (smoothScroll) {
+      smoothScroll.init({
+        selector: '.nav-link',
+        selectorHeader: '#navbar',
+        speed: 500,
+        easing: 'easeInOutCubic',
+        offset: 40
+      });
+    }
 
   });
 

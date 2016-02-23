@@ -16,9 +16,6 @@
     <link href='https://fonts.googleapis.com/css?family=Playfair+Display:400|Open+Sans:400,700' rel='stylesheet' type='text/css'>
   </head>
   <body>
-    <!--[if lt IE 10]>
-    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    <![endif]-->
 
     <main class="site-content container">
       <nav id="navbar" class="navbar">
@@ -35,6 +32,9 @@
         <hr class="nav-line"/>
       </nav>
       <section class="mod showcase-mod" id="showcase">
+        <!--[if lt IE 10]>
+          <p class="browserupgrade">Estás usando un navegador <strong>viejo :(</strong>. Por favor <a href="http://browsehappy.com/">actualízalo</a> para mejorar tu experiencia.</p>
+        <![endif]-->
         <img class="one" src="img/showcase/image1.jpg" alt="Karol y Eddie - Santiago, Nuevo León, México">
         <img class="two" src="img/showcase/image2.jpg" alt="Karol y Eddie - Alcatraz">
         <div class="welcome-message">
@@ -47,7 +47,7 @@
           </header>
           <h5 class="welcome-mod-date">20 de agosto del 2016</h5>
           <p>
-            Con mucha emoción y alegría queremos extenderles la invitación para que nos puedan acompañar en el día que marcará el inicio de nuestra vida como familia. Después de algunos años, una primera cita en un puesto de hot dogs, varios viajes para que la distancia no nos separara y muchas llamadas con diferencia de horas hemos decidido comenzar una vida juntos. Esperamos que en la compañía de las personas que más queremos, podamos celebrar la realización de este evento y compartir con ustedes un día que sin duda marcará de felicidad para siempre nuestras vidas.
+            Con mucha emoción y alegría queremos extenderles la invitación para que nos puedan acompañar en el día que marcará el inicio de nuestra vida como familia. Después de algunos años, una primera cita en un puesto de hot dogs, varios viajes para que la distancia no nos separara y muchas llamadas con diferencia de hora hemos decidido comenzar una vida juntos. Esperamos que en la compañía de las personas que más queremos, podamos celebrar este evento y compartir con ustedes un día que sin duda marcará de felicidad para siempre nuestras vidas.
           </p>
         </div>
         <img class="three" src="img/showcase/image3.jpg" alt="Karol y Eddie - Japanese Garden">
@@ -57,7 +57,7 @@
         <h2 class="mod-title" id="agenda-title">Agenda</h2>
         <p class="mod-subtitle">Para la ceremonia religiosa y recepción se sugiere que la vestimenta sea de vestido largo para mujeres y para hombres de traje.</p>
         <ul class="row info-row">
-          <li class="four columns info-column">
+          <li class="three columns info-column">
             <h2 class="info-column-title">Callejoneada</h2>
             <h4 class="info-column-subtitle">Alameda - Centro de Zacatecas</h4>
             <p>19 de Agosto del 2016</p>
@@ -65,7 +65,7 @@
             <p>Alameda Trinidad García de La Cadena, Centro, 98000 Zacatecas, Zac., Mexico</p>
             <a href="https://goo.gl/maps/pc4aRdcnvim">Ver Mapa</a>
           </li>
-          <li class="four columns info-column">
+          <li class="three columns info-column">
             <h2 class="info-column-title">Misa</h3>
             <h4 class="info-column-subtitle">Capilla Nápoles</h4>
             <p>20 de Agosto del 2016</p>
@@ -73,13 +73,21 @@
             <p>s/n, Jardín Juárez, Centro, Guadalupe, Zac., México</p>
             <a href="https://goo.gl/maps/JMkbQp22awp">Ver Mapa</a>
           </li>
-          <li class="four columns info-column">
+          <li class="three columns info-column">
             <h2 class="info-column-title">Recepción</h2>
             <h4 class="info-column-subtitle">Finca Santa</h4>
             <p>20 de Agosto del 2016</p>
             <p>3:00 p.m.</p>
             <p>Calle Independencia 4, Centro, 98600 Guadalupe, Zac., México</p>
             <a href="https://goo.gl/maps/PTwzabQX2hy">Ver Mapa</a>
+          </li>
+          <li class="three columns info-column">
+            <h2 class="info-column-title">Visita a museo</h2>
+            <h4 class="info-column-subtitle">Museo Virreinal</h4>
+            <p>21 de Agosto del 2016</p>
+            <p>3:00 p.m.</p>
+            <p>Jardin Juarez Oriente S/N, Centro, 98600 Guadalupe, Zac., Mexico</p>
+            <a href="https://goo.gl/maps/A9xcCNPgT9B2">Ver Mapa</a>
           </li>
         </ul>
       </section>
@@ -122,8 +130,29 @@
               <input name="famQuantity" class="u-full-width" type="number" placeholder="4" required>
             </div>
           </div>
-          <label for="exampleMessage">Recomendar canciones</label>
-          <textarea name="songList" class="u-full-width" placeholder="Artista - Canción" id="exampleMessage"></textarea>
+          <div class="row">
+            <div class="six columns">
+              <span class="as-label">¿Qué días nos podrán acompañar?</span>
+              <div class="row">
+                <label>
+                  <input type="checkbox" name="dia[]" value="viernes">
+                  <span class="label-body">Viernes</span>
+                </label>
+                <label>
+                  <input type="checkbox" name="dia[]" value="sabado">
+                  <span class="label-body">Sábado</span>
+                </label>
+                <label>
+                  <input type="checkbox" name="dia[]" value="domingo">
+                  <span class="label-body">Domingo</span>
+                </label>
+              </div>
+            </div>
+            <div class="six columns">
+              <label for="exampleMessage">Recomendar canciones</label>
+              <textarea name="songList" class="u-full-width" placeholder="Artista - Canción" id="exampleMessage"></textarea>
+            </div>
+          </div>
           <input type="hidden" name="_next" value="/thankyou.html" />
           <input type="hidden" name="_subject" value="Confirmando asistencia a boda" />
           <input type="text" name="_gotcha" style="display:none" />
@@ -140,7 +169,7 @@
       </section>
       <section class="mod">
         <h2 class="mod-title">Regalos</h2>
-        <p>Para nosotros lo más importante es contar con su presencia en la boda, pero si desean hacernos un regalo les agradeceremos que sea en efectivo ya que se nos dificulta la movilidad de regalos debido a las distancias. En la entrada del salon habra una caja donde podrán depositar el sobre que sera enviado con la invitación. De todo corazón les agradeceremos su regalo.</p>
+        <p>Para nosotros lo más importante es contar con su presencia en la boda, pero si desean hacernos un regalo les agradeceremos que sea en efectivo ya que se nos dificulta la movilidad de regalos debido a las distancias. En la entrada del salon habra una caja donde podrán depositar el sobre que sera enviado con la invitación. De todo corazón les agradeceremos.</p>
       </section>
       <section class="mod thankyou-mod">
         <h5 class="thankyou-mod-message">¡Gracias!<br/>Karol & Edilberto</h5>
