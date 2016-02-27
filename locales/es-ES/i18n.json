@@ -1,0 +1,75 @@
+{
+  "title":  "Karol & Eddie",
+  "description": "Con mucha emoción y alegría queremos extenderles la invitación para que nos puedan acompañar en el día que marcará el inicio de nuestra vida como familia. Después de algunos años, una primera cita en un puesto de hot dogs, varios viajes para que la distancia no nos separara y muchas llamadas con diferencia de hora hemos decidido comenzar una vida juntos. Esperamos que en la compañía de las personas que más queremos, podamos celebrar este evento y compartir con ustedes un día que sin duda marcará de felicidad para siempre nuestras vidas.",
+  "ogTitle": "Boda | Karol & Edilberto",
+  "nav": {
+    "menu": "Menú",
+    "home": "Inicio",
+    "agenda": "Boda",
+    "travel": "Viaje",
+    "photos": "Fotos"
+  },
+  "weddingDate": "20 de agosto del 2016",
+  "seeMap": "Ver Mapa",
+  "agenda": {
+    "title": "Agenda",
+    "subtitle": "Para la ceremonia religiosa y recepción se sugiere que la vestimenta sea de vestido largo para mujeres y para hombres de traje.",
+    "event1Title": "Callejoneada",
+    "event1Subtitle": "Alameda - Centro de Zacatecas",
+    "event1Date": "19 de Agosto del 2016",
+    "event1Time": "6:00 p.m. - 7:00 p.m.",
+    "event1Address": "Alameda Trinidad García de La Cadena, Centro, 98000 Zacatecas, Zac., Mexico",
+    "event2Title": "Misa",
+    "event2Subtitle": "Capilla Nápoles",
+    "event2Date": "20 de Agosto del 2016",
+    "event2Time": "2:00 p.m. - 3:00 p.m.",
+    "event2Address": "s/n, Jardín Juárez, Centro, Guadalupe, Zac., México",
+    "event3Title": "Recepción",
+    "event3Subtitle": "Finca Santa",
+    "event3Date": "20 de Agosto del 2016",
+    "event3Time": "3:00 p.m.",
+    "event3Address": "Calle Independencia 4, Centro, 98600 Guadalupe, Zac., México",
+    "event4Title": "Visita a museo",
+    "event4Subtitle": "Museo Virreinal",
+    "event4Date": "21 de Agosto del 2016",
+    "event4Time": "3:00 p.m.",
+    "event4Address": "Jardin Juarez Oriente S/N, Centro, 98600 Guadalupe, Zac., Mexico"
+  },
+  "travel": {
+    "title": "¿Dónde quedarse?",
+    "subtitle": "Favor de realizar la reservación por teléfono y mencionar que desean la tarifa para la boda de Karol y Edilberto.",
+    "hotel1": "Hotel Mesón de Jobito",
+    "hotel1Phone": "Tel: 01 (492) 924 1722",
+    "hotel1Address": "Jardín Juárez 143 Colonia Centro Zacatecas, C.P. 98000, Zacatecas, Zac.",
+    "hotel1Facts": "A 21 minutos del Aeropuerto Internacional y 16 minutos de la ceremonia religiosa.",
+    "hotel2": "Hotel Emporio Zacatecas",
+    "hotel2Phone": "Tel: 01 (492) 925 6500, 01 800 227 22 72, 01 800 800 61 61 y 01 55 50 62 61 61",
+    "hotel2Address": "Av. Hidalgo 703 Centro Histórico, C.P. 98000, Zacatecas, Zac.",
+    "hotel2Facts": "A 20 minutos del Aeropuerto Internacional y 15 minutos de la ceremonia religiosa."
+  },
+  "rsvp": {
+    "title": "Confirma tu asistencia",
+    "subtitle": "Favor de confirma tu asistencia llenando la siguiente forma o enviando un correo a <a href='mailto:karolacosta.padilla@gmail.com'>karolacosta.padilla@gmail.com</a>",
+    "name": "Nombre",
+    "namePlaceholder": "Fam. Ruvalcaba Galindo",
+    "numberPeople": "Cantidad de asistentes",
+    "numberPlaceholder": "2",
+    "days": "¿Qué días nos podrán acompañar?",
+    "friday": "Viernes",
+    "saturday": "Sábado",
+    "sunday": "Domingo",
+    "songs": "Recomendar canciones",
+    "songsPlaceholder": "Artista - Canción",
+    "confirm": "Confirmar asistencia"
+  },
+  "photos": {
+    "title": "Compártenos tus fotos",
+    "subtitle": "Ayúdanos a compartir fotos del evento en FB, Twitter ó Instagram",
+    "collageAlt": "Comparte tus fotos del evento en FB, Twitter ó Instagram"
+  },
+  "gifts": {
+    "title": "Regalos",
+    "message": "Para nosotros lo más importante es contar con su presencia en la boda, pero si desean hacernos un regalo les agradeceremos que sea en efectivo ya que se nos dificulta la movilidad de regalos debido a las distancias. En la entrada del salon habra una caja donde podrán depositar el sobre que sera enviado con la invitación. De todo corazón les agradeceremos."
+  },
+  "thankyou": "¡Gracias!<br/>Karol & Edilberto"
+}

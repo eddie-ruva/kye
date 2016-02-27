@@ -6,6 +6,7 @@ var autoprefixer = require('gulp-autoprefixer');
 var uglify = require('gulp-uglify');
 var connect = require('gulp-connect');
 var watch = require('gulp-watch');
+var i18n = require('gulp-i18n-localize');
 
 gulp.task('sass', function () {
   return gulp.src('./sass/**/*.scss')
@@ -46,6 +47,16 @@ gulp.task('webserver', function() {
   connect.server({
     livereload: true
   });
+});
+
+gulp.task('translate', function(){
+    return gulp.src('src/index.html.tmpl')
+      .pipe(i18n({
+        locales: ['en-US', 'es-ES'],
+        localeDir: './locales',
+        schema: "suffix"
+      }))
+    .pipe(gulp.dest('dist'));
 });
 
 gulp.task('release', ['sass:prod', 'compress']);
