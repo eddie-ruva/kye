@@ -1,6 +1,6 @@
 {
   "title":  "Karol & Eddie",
-  "description": "Con mucha emoción y alegría queremos extenderles la invitación para que nos puedan acompañar en el día que marcará el inicio de nuestra vida como familia. Después de algunos años, una primera cita en un puesto de hot dogs, varios viajes para que la distancia no nos separara y muchas llamadas con diferencia de hora hemos decidido comenzar una vida juntos. Esperamos que en la compañía de las personas que más queremos, podamos celebrar este evento y compartir con ustedes un día que sin duda marcará de felicidad para siempre nuestras vidas.",
+  "description": "Con mucha emoción y alegría queremos extenderles la invitación para acompañarnos en el día que marcará el inicio de nuestra vida como familia. Después de algunos años, una primera cita en un puesto de hot dogs, varios viajes para que la distancia no nos separara y muchas llamadas con diferencia de hora hemos decidido comenzar una vida juntos. Esperamos que en la compañía de las personas que más queremos, podamos celebrar este evento y compartir con ustedes un día que sin duda marcará de felicidad nuestras vidas.",
   "ogTitle": "Boda | Karol & Edilberto",
   "nav": {
     "menu": "Menú",
@@ -31,11 +31,11 @@
     "event3Date": "20 de Agosto del 2016",
     "event3Time": "3:00 p.m.",
     "event3Address": "Calle Independencia 4, Centro, 98600 Guadalupe, Zac., México",
-    "event4Title": "Visita a museo",
-    "event4Subtitle": "Museo Virreinal",
+    "event4Title": "Comida de despedida * <br/> <span class='note'>(Por confirmar)</span>",
+    "event4Subtitle": "Finca Santa",
     "event4Date": "21 de Agosto del 2016",
-    "event4Time": "12:30 p.m.",
-    "event4Address": "Jardin Juarez Oriente S/N, Centro, 98600 Guadalupe, Zac., Mexico"
+    "event4Time": "1:00 p.m.",
+    "event4Address": "Calle Independencia 4, Centro, 98600 Guadalupe, Zac., México"
   },
   "travel": {
     "title": "¿Dónde quedarse?",
@@ -72,7 +72,7 @@
   },
   "gifts": {
     "title": "Regalos",
-    "message": "Para nosotros lo más importante es contar con su presencia en la boda, pero si desean hacernos un regalo les agradeceremos que sea en efectivo ya que se nos dificulta la movilidad de regalos debido a las distancias. En la entrada del salon habrá una caja donde podrán depositar el sobre que sera enviado con la invitación. De todo corazón les agradeceremos."
+    "message": "Para nosotros lo más importante es contar con su presencia en la boda, pero si desean hacernos un regalo les agradeceremos que sea en efectivo ya que se nos dificulta su movilidad debido a las distancias. En la entrada del salón habrá una caja donde podrán depositar el sobre que será enviado con la invitación. De todo corazón les agradecemos."
   },
   "thankyou": "¡Gracias!<br/>Karol & Edilberto"
 }

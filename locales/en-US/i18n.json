@@ -1,6 +1,6 @@
 {
   "title":  "Karol & Eddie",
-  "description": "With much excitement and joy we would like to invite you to joins us on this very special day that will mark the beginning of our life as a family. After a few years, a first date in a hot dog stand, several trips to see each other and many calls with time difference we decided to start a life together. We hope to celebrate this special day with the people that mean the most to us and share with you one day that will definitiely be remembered for the rest of our lives.",
+  "description": "With much excitement and joy we would like to invite you to join us on this very special day that will mark the beginning of our life as a family. After a few years, a first date in a hot dog stand, several trips to see each other and many calls with time difference, we have decided to start a life together. We want to celebrate this special day with the people that mean the most to us and share with you the day that will definitely be remembered for the rest of our lives.",
   "ogTitle": "Wedding | Karol & Edilberto",
   "nav": {
     "menu": "Menu",
@@ -15,7 +15,7 @@
   "seeMap": "See Map",
   "agenda": {
     "title": "Agenda",
-    "subtitle": "For the religious ceremony and wedding reception we suggest long gown for women and suit for men",
+    "subtitle": "For the religious ceremony and wedding reception we suggest long gown for women and suit for men.",
     "event1Title": "Callejoneada",
     "event1Subtitle": "Alameda - Zacatecas Downtown",
     "event1Date": "August 19th, 2016",
@@ -31,15 +31,15 @@
     "event3Date": "August 20th, 2016",
     "event3Time": "3:00 p.m.",
     "event3Address": "Independencia Street #4, Centro, 98600 Guadalupe, Zac., México",
-    "event4Title": "Visit to Museum",
-    "event4Subtitle": "Virreinal Museum",
+    "event4Title": "After Wedding Brunch *<br/> <span class='note'>(To be confirmed)</span>",
+    "event4Subtitle": "Finca Santa",
     "event4Date": "August 21st, 2016",
-    "event4Time": "12:30 p.m.",
-    "event4Address": "Jardin Juarez Oriente, Centro, 98600 Guadalupe, Zac., Mexico"
+    "event4Time": "1:00 p.m.",
+    "event4Address": "Independencia Street #4, Centro, 98600 Guadalupe, Zac., México"
   },
   "travel": {
     "title": "Where to stay?",
-    "subtitle": "Please make the reservation by phone to get a special rate for the wedding. When calling don't forget to mention that you are looking for the special rate for Karol and Edilberto wedding.",
+    "subtitle": "Please make the reservation by phone to get a special rate for the wedding. When calling don't forget to mention that you are looking for the special rate for Karol and Edilberto's wedding.",
     "hotel1": "Hotel Mesón de Jobito",
     "hotel1Phone": "Tel: 01 (492) 924 1722",
     "hotel1Address": "Jardín Juárez 143 Colonia Centro Zacatecas, C.P. 98000, Zacatecas, Zac.",
@@ -72,7 +72,7 @@
   },
   "gifts": {
     "title": "Gifts",
-    "message": "For us the most important thing is to be able to share this special moment with you, but if you want to give us a gift we would appreciate it in cash as transporting gifts will be hard for us due to the travel logistics. At the entrance of the venue, we will have a box where you can drop the envelope that will be sent to you with the invitation. Wholeheartedly we appreciate you."
+    "message": "For us the most important thing is to share this special moment with you, but if you want to give us a gift we would appreciate it in cash as transporting gifts will be hard for us due to the travel logistics. At the entrance of the venue, we will have a box where you can drop the envelope that will be send to you with the invitation. Wholeheartedly we appreciate you."
   },
   "thankyou": "Thank you!<br/>Karol & Edilberto"
 }
