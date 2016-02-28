@@ -7,7 +7,9 @@
     "home": "Inicio",
     "agenda": "Boda",
     "travel": "Viaje",
-    "photos": "Fotos"
+    "photos": "Fotos",
+    "language": "English",
+    "languagePath": "/en"
   },
   "weddingDate": "20 de agosto del 2016",
   "seeMap": "Ver Mapa",
@@ -32,7 +34,7 @@
     "event4Title": "Visita a museo",
     "event4Subtitle": "Museo Virreinal",
     "event4Date": "21 de Agosto del 2016",
-    "event4Time": "3:00 p.m.",
+    "event4Time": "12:30 p.m.",
     "event4Address": "Jardin Juarez Oriente S/N, Centro, 98600 Guadalupe, Zac., Mexico"
   },
   "travel": {
@@ -49,7 +51,7 @@
   },
   "rsvp": {
     "title": "Confirma tu asistencia",
-    "subtitle": "Favor de confirma tu asistencia llenando la siguiente forma o enviando un correo a <a href='mailto:karolacosta.padilla@gmail.com'>karolacosta.padilla@gmail.com</a>",
+    "subtitle": "Favor de confirmar tu asistencia llenando la siguiente forma o enviando un correo a <a href='mailto:karolacosta.padilla@gmail.com'>karolacosta.padilla@gmail.com</a>",
     "name": "Nombre",
     "namePlaceholder": "Fam. Ruvalcaba Galindo",
     "numberPeople": "Cantidad de asistentes",
@@ -60,7 +62,8 @@
     "sunday": "Domingo",
     "songs": "Recomendar canciones",
     "songsPlaceholder": "Artista - Canción",
-    "confirm": "Confirmar asistencia"
+    "confirm": "Confirmar asistencia",
+    "nextPath": "/thankyou.html"
   },
   "photos": {
     "title": "Compártenos tus fotos",

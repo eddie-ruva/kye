@@ -23,16 +23,24 @@
     <main class="site-content container">
       <nav id="navbar" class="navbar">
         <div class="navbar-wrapper">
-          <span class="kye-logo">K&E</span>
+          <span class="kye-logo kye-logo-no-menu">K&E</span>
           <button id="navbar-trigger" class="navbar-menu-trigger">${{ i18n.nav.menu }}$</button>
         </div>
         <ul id="navbar-menu">
-          <li><a class="nav-link" href="#">${{ i18n.nav.home }}$</a></li>
-          <li><a class="nav-link" href="#agenda">${{ i18n.nav.agenda }}$</a></li>
-          <li class="middle"><a class="nav-link" href="#hotels">${{ i18n.nav.travel }}$</a></li>
-          <li><a class="nav-link" href="#photos">${{ i18n.nav.photos }}$</a></li>
+          <li>
+            <a class="nav-link" href="#">${{ i18n.nav.home }}$</a>
+          </li><li>
+            <a class="nav-link" href="#agenda">${{ i18n.nav.agenda }}$</a>
+          </li><li class="kye-logo-in-menu">
+            <span class="kye-logo">K&E</span>
+          </li><li>
+            <a class="nav-link" href="#hotels">${{ i18n.nav.travel }}$</a>
+          </li><li>
+            <a class="nav-link" href="#photos">${{ i18n.nav.photos }}$</a>
+          </li>
         </ul>
         <hr class="nav-line"/>
+        <a href="${{ i18n.nav.languagePath }}$" class="language">${{ i18n.nav.language}}$</a>
       </nav>
       <section class="mod showcase-mod" id="showcase">
         <!--[if lt IE 10]>
@@ -100,7 +108,7 @@
         <ul class="row info-row">
           <li class="six columns info-column">
             <h2 class="info-column-title"><a href="http://www.mesondejobito.com.mx/" target="_blank" rel="nofollow">${{ i18n.travel.hotel1 }}$</a></h2>
-            <img class="info-column-img" src="img/hoteles/jobito.jpeg" alt="Vista de Mesón de Jobito" width="350">
+            <a href="http://www.mesondejobito.com.mx/" target="_blank" rel="nofollow"><img class="info-column-img" src="img/hoteles/jobito.jpeg" alt="Vista de Mesón de Jobito" width="350"></a>
             <p>${{ i18n.travel.hotel1Phone }}$</p>
             <p>${{ i18n.travel.hotel1Address }}$</p>
             <p>${{ i18n.travel.hotel1Facts }}$</p>
@@ -108,7 +116,7 @@
           </li>
           <li class="six columns info-column">
             <h2 class="info-column-title"><a href="http://www.hotelesemporio.com/zacatecas" target="_blank" rel="nofollow">${{ i18n.travel.hotel2 }}$</a></h2>
-            <img class="info-column-img" src="img/hoteles/emporio.jpeg" alt="Vista de Hotel Emporio" width="350">
+            <a href="http://www.hotelesemporio.com/zacatecas" target="_blank" rel="nofollow"><img class="info-column-img" src="img/hoteles/emporio.jpeg" alt="Vista de Hotel Emporio" width="350"></a>
             <p>${{ i18n.travel.hotel2Phone }}$</p>
             <p>${{ i18n.travel.hotel2Address }}$</p>
             <p>${{ i18n.travel.hotel2Facts }}$</p>

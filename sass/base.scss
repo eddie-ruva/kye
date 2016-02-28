@@ -37,9 +37,6 @@ video {
 
 .site-content {
   text-align: center;
-  @media (min-width: 550px) {
-    // When we have sticky nav
-  }
 }
 
 @keyframes fadeInDown {
@@ -74,7 +71,7 @@ video {
   @media (min-width: 550px) {
     min-height: $kye-logo-size-big;
     width: 80%; // Match .container width
-    padding: 3.5rem 0;
+    padding: 1.5rem 0;
     box-shadow: none;
     left: 50%;
     transform: translateX(-50%);
@@ -86,13 +83,7 @@ video {
     position: relative;
 
     @media (min-width: 550px) {
-      display: inline-block;
-      margin: 0;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      z-index: 3;
+      display: none;
     }
   }
 
@@ -124,7 +115,7 @@ video {
     @media (min-width: 550px) {
       display: inline-block;
       margin: 0;
-      z-index: 2;
+      z-index: 2; // Has to be on top of the nav-line
     }
   }
 
@@ -137,13 +128,26 @@ video {
     color: rgb(34, 34, 34);
 
     @media (min-width: 550px) {
-      margin-bottom: 0;
+      margin: 0;
 
-      &.middle {
-        margin-left: $kye-logo-size-big;
+      &:first-child {
+        padding-left: 2rem;
+      }
+
+      &:last-child {
+        padding-right: 2rem;
+      }
+    }
+
+    &.kye-logo-in-menu {
+      display: none;
+
+      @media (min-width: 550px) {
+        display: inline-block;
       }
     }
   }
+
 
   .kye-logo {
     width: $kye-logo-size;
@@ -154,7 +158,7 @@ video {
     line-height: $kye-logo-size;
     color: rgb(255, 255, 255);
     text-shadow: 0px 1px 1px rgb(85, 85, 85);
-    font-size: 1.1em;
+    font-size: 1.7rem;
     letter-spacing: .15em;
     display: inline-block;
     text-align: center;
@@ -167,25 +171,17 @@ video {
   }
 
   a {
-    color: rgb(34, 34, 34);
+    color: #222222;
     text-decoration: none;
+
+    &:hover {
+      color: #0FA0CE;
+    }
   }
 
   .nav-line {
     display: none;
-  }
-
-  @media (min-width: 550px) {
-    .kye-logo {
-      position: static;
-      margin: 0 1rem;
-    }
-
-    li {
-      margin: 0;
-    }
-
-    .nav-line {
+    @media (min-width: 550px) {
       display: block;
       position: absolute;
       top: 50%;
@@ -194,6 +190,32 @@ video {
       width: 100%;
       margin: 0;
     }
+  }
+
+  .language {
+    position: absolute;
+    right: 0;
+    bottom: -30px;
+    background: #EFEFEF;
+    padding: 5px;
+    font-size: 1.2rem;
+    color: #ABABAB;
+    z-index: 3; // Has to be on top of the navigation items
+
+    .has-docked-nav & {
+      display: none;
+    }
+
+    @media (min-width: 550px) {
+      top: 0;
+      bottom: inherit;
+      right: 0;
+
+      .has-docked-nav & {
+        display: block;;
+      }
+    }
+
   }
 }
 
@@ -206,10 +228,6 @@ video {
 
 .showcase-mod {
   margin-top: 15rem;
-
-  @media (min-width: 550px) {
-    margin-top: 10rem;
-  }
 
   .welcome-message {
     margin: 5rem 0;
@@ -318,6 +336,10 @@ video {
     a {
       text-decoration: none;
       color: $kye-red;
+
+      &:hover {
+        text-decoration: underline;
+      }
     }
   }
 
@@ -331,7 +353,7 @@ video {
 
   .info-column-img {
     margin-bottom: 1rem;
-    width: 100%;
+    width: 99%;
   }
 
   p {

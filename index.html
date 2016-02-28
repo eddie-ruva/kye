@@ -23,16 +23,24 @@
     <main class="site-content container">
       <nav id="navbar" class="navbar">
         <div class="navbar-wrapper">
-          <span class="kye-logo">K&E</span>
+          <span class="kye-logo kye-logo-no-menu">K&E</span>
           <button id="navbar-trigger" class="navbar-menu-trigger">Menú</button>
         </div>
         <ul id="navbar-menu">
-          <li><a class="nav-link" href="#">Inicio</a></li>
-          <li><a class="nav-link" href="#agenda">Boda</a></li>
-          <li class="middle"><a class="nav-link" href="#hotels">Viaje</a></li>
-          <li><a class="nav-link" href="#photos">Fotos</a></li>
+          <li>
+            <a class="nav-link" href="#">Inicio</a>
+          </li><li>
+            <a class="nav-link" href="#agenda">Boda</a>
+          </li><li class="kye-logo-in-menu">
+            <span class="kye-logo">K&E</span>
+          </li><li>
+            <a class="nav-link" href="#hotels">Viaje</a>
+          </li><li>
+            <a class="nav-link" href="#photos">Fotos</a>
+          </li>
         </ul>
         <hr class="nav-line"/>
+        <a href="/en" class="language">English</a>
       </nav>
       <section class="mod showcase-mod" id="showcase">
         <!--[if lt IE 10]>
@@ -88,7 +96,7 @@
             <h2 class="info-column-title">Visita a museo</h2>
             <h4 class="info-column-subtitle">Museo Virreinal</h4>
             <p>21 de Agosto del 2016</p>
-            <p>3:00 p.m.</p>
+            <p>12:30 p.m.</p>
             <p>Jardin Juarez Oriente S/N, Centro, 98600 Guadalupe, Zac., Mexico</p>
             <a href="https://goo.gl/maps/A9xcCNPgT9B2">Ver Mapa</a>
           </li>
@@ -100,7 +108,7 @@
         <ul class="row info-row">
           <li class="six columns info-column">
             <h2 class="info-column-title"><a href="http://www.mesondejobito.com.mx/" target="_blank" rel="nofollow">Hotel Mesón de Jobito</a></h2>
-            <img class="info-column-img" src="img/hoteles/jobito.jpeg" alt="Vista de Mesón de Jobito" width="350">
+            <a href="http://www.mesondejobito.com.mx/" target="_blank" rel="nofollow"><img class="info-column-img" src="img/hoteles/jobito.jpeg" alt="Vista de Mesón de Jobito" width="350"></a>
             <p>Tel: 01 (492) 924 1722</p>
             <p>Jardín Juárez 143 Colonia Centro Zacatecas, C.P. 98000, Zacatecas, Zac.</p>
             <p>A 21 minutos del Aeropuerto Internacional y 16 minutos de la ceremonia religiosa.</p>
@@ -108,7 +116,7 @@
           </li>
           <li class="six columns info-column">
             <h2 class="info-column-title"><a href="http://www.hotelesemporio.com/zacatecas" target="_blank" rel="nofollow">Hotel Emporio Zacatecas</a></h2>
-            <img class="info-column-img" src="img/hoteles/emporio.jpeg" alt="Vista de Hotel Emporio" width="350">
+            <a href="http://www.hotelesemporio.com/zacatecas" target="_blank" rel="nofollow"><img class="info-column-img" src="img/hoteles/emporio.jpeg" alt="Vista de Hotel Emporio" width="350"></a>
             <p>Tel: 01 (492) 925 6500, 01 800 227 22 72, 01 800 800 61 61 y 01 55 50 62 61 61</p>
             <p>Av. Hidalgo 703 Centro Histórico, C.P. 98000, Zacatecas, Zac.</p>
             <p>A 20 minutos del Aeropuerto Internacional y 15 minutos de la ceremonia religiosa.</p>
@@ -118,7 +126,7 @@
       </section>
       <section class="mod" id="rsvp">
         <h2 class="mod-title">Confirma tu asistencia</h2>
-        <p class="mod-subtitle">Favor de confirmar tu asistencia llenando la siguiente forma o enviando un correo a <a href="mailto:karolacosta.padilla@gmail.com">karolacosta.padilla@gmail.com</a></p>
+        <p class="mod-subtitle">Favor de confirmar tu asistencia llenando la siguiente forma o enviando un correo a <a href='mailto:karolacosta.padilla@gmail.com'>karolacosta.padilla@gmail.com</a></p>
         <form id="rsvp-form" class="rsvp-form" method="POST" action="http://formspree.io/karolacosta.padilla@gmail.com">
           <div class="row">
             <div class="six columns">

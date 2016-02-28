@@ -7,7 +7,9 @@
     "home": "Home",
     "agenda": "Agenda",
     "travel": "Hotels",
-    "photos": "Photos"
+    "photos": "Photos",
+    "language": "Español",
+    "languagePath": "/"
   },
   "weddingDate": "August 20th, 2016",
   "seeMap": "See Map",
@@ -32,7 +34,7 @@
     "event4Title": "Visit to Museum",
     "event4Subtitle": "Virreinal Museum",
     "event4Date": "August 21st, 2016",
-    "event4Time": "3:00 p.m.",
+    "event4Time": "12:30 p.m.",
     "event4Address": "Jardin Juarez Oriente, Centro, 98600 Guadalupe, Zac., Mexico"
   },
   "travel": {
@@ -60,7 +62,8 @@
     "sunday": "Sunday",
     "songs": "Recommend us songs",
     "songsPlaceholder": "Artist - Song",
-    "confirm": "Submit"
+    "confirm": "Submit",
+    "nextPath": "/thankyou-en.html"
   },
   "photos": {
     "title": "Share your pictures with us!",

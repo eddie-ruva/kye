@@ -1,5 +1,5 @@
 (function(root, doc) {
-  var navigationOffsetTop;
+  var navigationHeight;
 
   function hasClass(el, className) {
     // From: http://youmightnotneedjquery.com/
@@ -55,11 +55,9 @@
   function onScroll() {
     var documentTop = doc.body.scrollTop;
 
-    if(navigationOffsetTop < documentTop && !hasClass(doc.body, 'has-docked-nav')) {
+    if(navigationHeight < documentTop) {
       addClass(doc.body, 'has-docked-nav');
-    }
-
-    if(navigationOffsetTop > documentTop && hasClass(doc.body, 'has-docked-nav')) {
+    } else {
       removeClass(doc.body, 'has-docked-nav');
     }
   }
@@ -69,8 +67,7 @@
     var menuButton = doc.getElementById('navbar-trigger');
     var navbarMenu = doc.getElementById('navbar-menu');
 
-    navigationOffsetTop = doc.getElementById('navbar').getBoundingClientRect().top +
-      doc.body.scrollTop;
+    navigationHeight = doc.getElementById('navbar').offsetHeight;
 
     root.addEventListener('scroll', function(e) {
       if (!ticking) {

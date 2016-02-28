@@ -1,3 +1,5 @@
+/*jslint node: true */
+
 'use strict';
 
 var gulp = require('gulp');
@@ -36,6 +38,7 @@ gulp.task('compress', function() {
 gulp.task('watch', function () {
   gulp.watch('./sass/**/*.scss', ['sass']);
   gulp.watch('./js/**/*.js', ['compress']);
+  gulp.watch('./src/*.tmpl', ['generate-index']);
 });
 
 gulp.task('livereload', function() {
@@ -60,21 +63,21 @@ gulp.task('translate', function(){
     .pipe(gulp.dest('dist'));
 });
 
-gulp.task('move', function() {
+gulp.task('generate-index', ['translate'], function() {
   return gulp.src("./dist/*.tmpl")
     .pipe(rename(function (path) {
      var filenameSegments = path.basename.split('-');
 
      if (path.basename.indexOf("es-ES") > -1) {
-      path.basename = "index";
+       path.basename = "index";
      } else {
-      path.basename = filenameSegments[1];
+       path.basename = filenameSegments[1];
      }
 
-     path.extname = ".html"
+     path.extname = ".html";
     }))
   .pipe(gulp.dest("./"));
 });
 
 gulp.task('release', ['sass:prod', 'compress']);
-gulp.task('default', ['sass', 'compress', 'webserver', 'livereload', 'watch']);
+gulp.task('default', ['generate-index', 'sass', 'compress', 'webserver', 'livereload', 'watch']);
