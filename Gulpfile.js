@@ -7,6 +7,7 @@ var uglify = require('gulp-uglify');
 var connect = require('gulp-connect');
 var watch = require('gulp-watch');
 var i18n = require('gulp-i18n-localize');
+var rename = require('gulp-rename');
 
 gulp.task('sass', function () {
   return gulp.src('./sass/**/*.scss')
@@ -50,13 +51,29 @@ gulp.task('webserver', function() {
 });
 
 gulp.task('translate', function(){
-    return gulp.src('src/index.html.tmpl')
-      .pipe(i18n({
-        locales: ['en-US', 'es-ES'],
-        localeDir: './locales',
-        schema: "suffix"
-      }))
+  return gulp.src('src/index.tmpl')
+    .pipe(i18n({
+      locales: ['en-US', 'es-ES'],
+      localeDir: './locales',
+      schema: "suffix"
+    }))
     .pipe(gulp.dest('dist'));
+});
+
+gulp.task('move', function() {
+  return gulp.src("./dist/*.tmpl")
+    .pipe(rename(function (path) {
+     var filenameSegments = path.basename.split('-');
+
+     if (path.basename.indexOf("es-ES") > -1) {
+      path.basename = "index";
+     } else {
+      path.basename = filenameSegments[1];
+     }
+
+     path.extname = ".html"
+    }))
+  .pipe(gulp.dest("./"));
 });
 
 gulp.task('release', ['sass:prod', 'compress']);
