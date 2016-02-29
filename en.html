@@ -130,15 +130,9 @@
         <form id="rsvp-form" class="rsvp-form" method="POST" action="http://formspree.io/karolacosta.padilla@gmail.com">
           <div class="row">
             <div class="six columns">
-              <label for="exampleEmailInput">Name</label>
-              <input name="famName" class="u-full-width" type="text" placeholder="Edilberto y Karol" required>
+              <label for="exampleEmailInput">Family name or guest name</label>
+              <input name="famName" class="u-full-width" type="text" placeholder="Karol Acosta" required>
             </div>
-            <div class="six columns">
-              <label for="exampleRecipientInput">How many people?</label>
-              <input name="famQuantity" class="u-full-width" type="number" placeholder="2" required>
-            </div>
-          </div>
-          <div class="row">
             <div class="six columns">
               <span class="as-label">Which days will you be able to be with us?</span>
               <div class="row">
@@ -156,7 +150,9 @@
                 </label>
               </div>
             </div>
-            <div class="six columns">
+          </div>
+          <div class="row">
+            <div class="twelve columns">
               <label for="exampleMessage">Recommend us songs</label>
               <textarea name="songList" class="u-full-width" placeholder="Artist - Song" id="exampleMessage"></textarea>
             </div>

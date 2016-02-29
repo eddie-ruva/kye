@@ -52,7 +52,7 @@
   "rsvp": {
     "title": "Confirma tu asistencia",
     "subtitle": "Favor de confirmar tu asistencia llenando la siguiente forma o enviando un correo a <a href='mailto:karolacosta.padilla@gmail.com'>karolacosta.padilla@gmail.com</a>",
-    "name": "Nombre",
+    "name": "Nombre de la familia o invitado",
     "namePlaceholder": "Fam. Ruvalcaba Galindo",
     "numberPeople": "Cantidad de asistentes",
     "numberPlaceholder": "2",

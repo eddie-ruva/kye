@@ -52,8 +52,8 @@
   "rsvp": {
     "title": "RSVP",
     "subtitle": "Please confirm if you will be attending the event in the following form or by sending an email to <a href='mailto:karolacosta.padilla@gmail.com'>karolacosta.padilla@gmail.com</a>",
-    "name": "Name",
-    "namePlaceholder": "Edilberto y Karol",
+    "name": "Family name or guest name",
+    "namePlaceholder": "Karol Acosta",
     "numberPeople": "How many people?",
     "numberPlaceholder": "2",
     "days": "Which days will you be able to be with us?",
