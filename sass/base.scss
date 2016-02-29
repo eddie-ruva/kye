@@ -228,6 +228,7 @@ video {
 
 .showcase-mod {
   margin-top: 15rem;
+  transform-style: preserve-3d;
 
   .welcome-message {
     margin: 5rem 0;
@@ -261,19 +262,19 @@ video {
     position: relative;
 
     &.one {
-      transform: rotate($image-rotation);
+      transform: rotateZ($image-rotation);
     }
 
     &.two {
-      transform: rotate(-$image-rotation);
+      transform: rotateZ(-$image-rotation);
     }
 
     &.three {
-      transform: rotate($image-rotation);
+      transform: rotateZ($image-rotation);
     }
 
     &.four {
-      transform: rotate(-$image-rotation);
+      transform: rotateZ(-$image-rotation);
     }
 
     @media (min-width: 400px) {
@@ -285,22 +286,22 @@ video {
       width: 47%;
 
       &.one {
-        transform: rotate($image-rotation);
+        transform: rotateZ($image-rotation);
       }
 
       &.two {
-        transform: rotate(-$image-rotation);
+        transform: rotateZ(-$image-rotation);
         z-index: 2;
       }
 
       &.three {
-        transform: rotate(-$image-rotation);
+        transform: rotateZ(-$image-rotation);
         top: -30px;
         z-index: 3;
       }
 
       &.four {
-        transform: rotate($image-rotation);
+        transform: rotateZ($image-rotation);
         top: -30px;
         z-index: 4;
       }
