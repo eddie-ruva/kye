@@ -83,7 +83,7 @@
       toggleClass(navbarMenu, 'is-open');
     });
 
-    if (smoothScroll) {
+    if (root.smoothScroll) {
       smoothScroll.init({
         selector: '.nav-link',
         selectorHeader: '#navbar',
